@@ -21,10 +21,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Dictionary.class);
         startActivity(intent);
     }
-    public void Mystery(View view) {
-        Intent intent = new Intent(this, Mystery.class);
-        startActivity(intent);
-    }
     public void PoI(View view) {
         Intent intent = new Intent(this, PoI.class);
         startActivity(intent);
