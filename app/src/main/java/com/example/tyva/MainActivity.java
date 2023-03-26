@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void Dictionary(View view) {
-        Intent intent = new Intent(this, Dictionary.class);
+        Intent intent = new Intent(this, Phrasebook.class);
         startActivity(intent);
     }
     public void PoI(View view) {
