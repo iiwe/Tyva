@@ -4,100 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mainColor"
-    android:backgroundTint="#F6F6F6"
-    tools:context=".MainActivity">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="411dp"
-        android:layout_height="108dp"
-        android:background="@color/titleColor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textMain"
-            android:layout_width="276dp"
-            android:layout_height="58dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="16dp"
-            android:fontFamily="@font/montserrat_extrabold"
-            android:text="Путеводитель"
-            android:textColor="#14216C"
-            android:textSize="40dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textMain2"
-            android:layout_width="270dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="49dp"
-            android:layout_marginEnd="20dp"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="по республике Тыва"
-            android:textColor="#3770E3"
-            android:textSize="25dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="113dp"
-            android:layout_height="108dp"
-            android:layout_marginEnd="288dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/_235" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    tools:context=".MainActivity"
+    android:background="@drawable/background1"
+    >
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="165dp"
-        android:layout_height="135dp"
-        android:background="@color/titleColor"
+        android:layout_width="173dp"
+        android:layout_height="60dp"
+        android:background="#E61212"
         android:onClick="About"
         android:text="o Тыве"
+        android:textColor="#FFFDE7"
+        android:textColorHighlight="#F1EEEE"
+        app:iconTint="#CA1B1B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.342" />
+        app:layout_constraintVertical_bias="0.165"
+        app:rippleColor="#00E81111" />
 
     <Button
         android:id="@+id/btn2"
-        android:layout_width="165dp"
-        android:layout_height="135dp"
-        android:background="@color/titleColor"
+        android:layout_width="182dp"
+        android:layout_height="58dp"
+        android:background="#FFFFFF"
         android:onClick="Dictionary"
         android:text="разговорник"
+        android:textColor="#020F60"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintHorizontal_bias="0.275"
         app:layout_constraintStart_toEndOf="@+id/btn1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.342" />
+        app:layout_constraintVertical_bias="0.164"
+        app:rippleColor="#E4E4E4" />
 
     <Button
         android:id="@+id/btn4"
-        android:layout_width="165dp"
-        android:layout_height="135dp"
-        android:background="#CCCCCC"
+        android:layout_width="168dp"
+        android:layout_height="61dp"
+        android:background="#FFFEFE"
         android:fontFamily="@font/montserrat_medium"
         android:onClick="PoI"
         android:text="достопримечательности"
-        android:textColor="#14216C"
+        android:textColor="#020F60"
         android:textColorLink="#040E2B"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.697" />
+        app:layout_constraintVertical_bias="0.311" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
