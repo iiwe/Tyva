@@ -16,8 +16,6 @@ public class About extends AppCompatActivity {
     MediaPlayer mediaPlayer;
     Button btn_stop, btn_pause;
     ImageButton btn_play;
-
-    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
