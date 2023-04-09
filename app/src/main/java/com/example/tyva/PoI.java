@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -38,11 +40,9 @@ public class PoI extends AppCompatActivity {
     private final Point CAMERA_TARGET = new Point(51.71982705977847, 94.44525207784682);
 
     private final Point ANIMATED_PLACEMARK_CENTER = new Point(59.948, 30.318);
-
+    private Button full_screen;
     private MapObjectCollection mapObjects;
     private Handler animationHandler;
-
-    private PoIData my_Poi;
     private LinkedList<PoIData> my_PoIs; //объявление
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +60,8 @@ public class PoI extends AppCompatActivity {
         mapObjects = mapview.getMap().getMapObjects().addCollection();
         animationHandler = new Handler();
         createMapObjects();
+
+        full_screen = findViewById(R.id.full_screen);
     }
     @Override
     protected void onStop() {
@@ -153,5 +155,10 @@ public class PoI extends AppCompatActivity {
         PlacemarkMapObject animatedPlacemark =
                 mapObjects.addPlacemark(ANIMATED_PLACEMARK_CENTER, imageProvider, new IconStyle());
         animatedPlacemark.useAnimation().play();
+    }
+
+    public void full(View view) {
+        mapview.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
+        full_screen.setVisibility(View.INVISIBLE);
     }
 }

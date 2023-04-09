@@ -7,7 +7,6 @@ public class PoIData {
     private String name;
     private Point coords;
 
-
     public PoIData(String name, Point coords) {
         this.name = name;
         this.coords = coords;
