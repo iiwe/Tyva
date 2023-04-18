@@ -144,7 +144,7 @@ public class PoI extends AppCompatActivity {
 
         for (PoIData p: my_PoIs) {
             CircleMapObject circle = mapObjects.addCircle(
-                    new Circle(p.getCoords(), 1000), Color.RED, 2, Color.RED);
+                    new Circle(p.getCoords(), 50), Color.RED, 2, Color.RED);
             circle.setZIndex(50.0f);
             circle.setUserData(p);
             // Client code must retain strong reference to the listener.

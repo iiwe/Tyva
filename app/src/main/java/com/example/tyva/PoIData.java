@@ -7,6 +7,15 @@ public class PoIData {
     private String name;
     private Point coords;
 
+    public int getFoto() {
+        return foto;
+    }
+
+    public void setFoto(int foto) {
+        this.foto = foto;
+    }
+
+    private int foto;
     public PoIData(String name, Point coords) {
         this.name = name;
         this.coords = coords;

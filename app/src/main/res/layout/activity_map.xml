@@ -7,13 +7,23 @@
     android:layout_height="match_parent"
     tools:context=".Map">
 
+  <ListView
+      android:id="@+id/list_PoI"
+      android:layout_width="407dp"
+      android:layout_height="262dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.157" />
+
   <Button
       android:id="@+id/open_map"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginStart="104dp"
-      android:layout_marginTop="52dp"
+      android:layout_marginStart="116dp"
+      android:layout_marginTop="292dp"
+      android:onClick="show_map"
       android:text="показать на карте"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      app:layout_constraintTop_toBottomOf="@+id/list_PoI" />
 </androidx.constraintlayout.widget.ConstraintLayout>
