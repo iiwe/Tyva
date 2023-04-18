@@ -10,8 +10,8 @@
 
     <TextView
         android:id="@+id/txtAbout"
-        android:layout_width="328dp"
-        android:layout_height="328dp"
+        android:layout_width="335dp"
+        android:layout_height="463dp"
         android:text="Республика Тыва – это самобытный и неповторимый регион России,
         расположенный в географическом центре Азии, на юге Восточной Сибири, в верховьях Енисея.
         Тыва – это край чистейших горных рек, песчаных пустынь, снежных вершин Саян,
@@ -25,32 +25,9 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.626"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.387" />
-
-    <Button
-        android:id="@+id/pause_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="536dp"
-        android:onClick="pause"
-        android:text="pause"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/stop_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="292dp"
-        android:layout_marginTop="536dp"
-        android:onClick="stop"
-        android:text="stop"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintVertical_bias="0.429" />
 
     <ImageButton
         android:id="@+id/play_btn"
@@ -60,11 +37,41 @@
         android:contentDescription="Play Button"
         android:onClick="play"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/pause_btn"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.79"
-        app:srcCompat="@drawable/play_2" />
+        app:layout_constraintVertical_bias="0.823"
+        />
+
+    <ImageButton
+        android:id="@+id/pause_btn"
+        android:layout_width="69dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="Play Button"
+        android:onClick="pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.825"
+        app:srcCompat="@drawable/pau" />
+
+    <ImageButton
+        android:id="@+id/stop_btn"
+        android:layout_width="71dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="Play Button"
+        android:onClick="stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.821"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

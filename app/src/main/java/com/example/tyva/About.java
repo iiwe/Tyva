@@ -14,8 +14,7 @@ import java.io.IOException;
 
 public class About extends AppCompatActivity {
     MediaPlayer mediaPlayer;
-    Button btn_stop, btn_pause;
-    ImageButton btn_play;
+    ImageButton btn_play, btn_stop, btn_pause;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
