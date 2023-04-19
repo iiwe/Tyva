@@ -1,9 +1,20 @@
 package com.example.tyva;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
 import com.yandex.mapkit.geometry.Point;
 
-public class PoIData {
 
+public class PoIData implements Parcelable {
+//для добавления подробного описания достопримечательнсти:
+    //1) Добавить поле в PoIData
+    //2) Сделать ему get и set
+    //3) Добавить его в writeToParcel и в createFromParcel
+    //4) Модифицировать activity_poi_full - добавить туда текстовое поле для полного описания
+    // Сами описания хранить в виде массива String в Map.java - аналогично словарю
     private String name;
     private Point coords;
 
@@ -13,6 +24,17 @@ public class PoIData {
 
     public void setFoto(int foto) {
         this.foto = foto;
+    }
+
+    public PoIData(String name, Point coords, int foto) {
+        this.name = name;
+        this.coords = coords;
+        this.foto = foto;
+    }
+
+    @Override
+    public String toString(){
+        return "Name = " + name;
     }
 
     private int foto;
@@ -36,4 +58,33 @@ public class PoIData {
     public void setCoords(Point coords) {
         this.coords = coords;
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(@NonNull Parcel parcel, int i) {
+        parcel.writeString(name);
+        parcel.writeDouble(coords.getLatitude());
+        parcel.writeDouble(coords.getLongitude());
+        parcel.writeInt(foto);
+    }
+    public static final Creator<PoIData> CREATOR = new Creator<PoIData>() {
+        @Override
+        public PoIData createFromParcel(Parcel parcel) {
+            String name = parcel.readString();
+            double x = parcel.readDouble();
+            double y = parcel.readDouble();
+            int foto = parcel.readInt();
+            return new PoIData(name, new Point(x, y), foto);
+        }
+
+        @Override
+        public PoIData[] newArray(int i) {
+            return new PoIData[i];
+        }
+    };
+
 }

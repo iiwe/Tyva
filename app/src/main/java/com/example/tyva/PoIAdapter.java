@@ -45,7 +45,7 @@ public class PoIAdapter extends BaseAdapter {
         }
         PoIData poIData = poIDatas.get(i); //тот, на кого мы тыкнули
         ((TextView)view.findViewById(R.id.namePoi)).setText(poIData.getName());
-        ((ImageView)view.findViewById(R.id.fotoPoi)).setImageResource(R.drawable.flag_tyva_new);
+        ((ImageView)view.findViewById(R.id.fotoPoi)).setImageResource(poIData.getFoto());
         return view;
     }
 }
