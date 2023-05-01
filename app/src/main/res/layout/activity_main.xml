@@ -10,9 +10,9 @@
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="173dp"
-        android:layout_height="60dp"
-        android:background="#E61212"
+        android:layout_width="230dp"
+        android:layout_height="58dp"
+        android:background="#7A5236"
         android:onClick="About"
         android:text="o Тыве"
         android:textColor="#FFFDE7"
@@ -20,44 +20,45 @@
         app:iconTint="#CA1B1B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165"
+        app:layout_constraintVertical_bias="0.307"
         app:rippleColor="#00E81111" />
 
     <Button
         android:id="@+id/btn2"
-        android:layout_width="182dp"
+        android:layout_width="230dp"
         android:layout_height="58dp"
-        android:background="#FFFFFF"
+        android:background="#7A5236"
         android:onClick="Dictionary"
         android:text="разговорник"
-        android:textColor="#020F60"
+        android:textColor="#FFFDE7"
+        android:textColorHighlight="#F1EEEE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.275"
-        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164"
+        app:layout_constraintVertical_bias="0.466"
         app:rippleColor="#E4E4E4" />
 
     <Button
         android:id="@+id/btn4"
-        android:layout_width="168dp"
-        android:layout_height="61dp"
-        android:background="#FFFEFE"
+        android:layout_width="230dp"
+        android:layout_height="58dp"
+        android:background="#7A5236"
         android:fontFamily="@font/montserrat_medium"
         android:onClick="PoI"
         android:text="достопримечательности"
-        android:textColor="#020F60"
+        android:textColor="#FFFDE7"
         android:textColorLink="#040E2B"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.311" />
+        app:layout_constraintVertical_bias="0.622" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

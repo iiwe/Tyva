@@ -5,25 +5,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background1"
     tools:context=".Map">
 
   <ListView
       android:id="@+id/list_PoI"
-      android:layout_width="407dp"
-      android:layout_height="262dp"
+      android:layout_width="422dp"
+      android:layout_height="736dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.333"
+      app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.157" />
+      app:layout_constraintVertical_bias="0.0" />
 
   <Button
       android:id="@+id/open_map"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="116dp"
-      android:layout_marginTop="292dp"
+      android:layout_width="173dp"
+      android:layout_height="51dp"
+      android:background="#7A5236"
       android:onClick="show_map"
+      android:shadowColor="#931B1B"
       android:text="показать на карте"
+      android:textColor="#FFFFFF"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/list_PoI" />
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.976"
+      app:rippleColor="#FFC1C1"
+      app:strokeColor="#D64141" />
 </androidx.constraintlayout.widget.ConstraintLayout>

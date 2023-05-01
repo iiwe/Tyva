@@ -32,7 +32,6 @@ public class Map extends AppCompatActivity {
         my_PoIs.add(new PoIData("Буддийская ниша Суме", new Point(51.607277, 92.395501)));
         my_PoIs.add(new PoIData("гора Догэ:", new Point(51.761853, 94.423260)));
         my_PoIs.add(new PoIData("Долина царей", new Point(52.071665, 93.631851)));
-        my_PoIs.add(new PoIData("Долина царей", new Point(52.095953, 93.711247)));
         my_PoIs.add(new PoIData("озеро Дус-Холь", new Point(50.336154, 95.015473)));
         my_PoIs.add(new PoIData("Дургенский каньон", new Point(51.046501, 94.537952)));
         my_PoIs.add(new PoIData("река Эне-Сай(Енисей)", new Point(51.728576, 94.455307)));
@@ -43,8 +42,8 @@ public class Map extends AppCompatActivity {
         my_PoIs.add(new PoIData("река Кызыл-Хем", new Point(51.618802, 95.083672)));
         my_PoIs.add(new PoIData("гора Монгун-Тайга", new Point(50.278795, 90.118663)));
         my_PoIs.add(new PoIData("писаница Мугур-Саргол", new Point(51.699368, 92.288905)));
-        my_PoIs.add(new PoIData("Пор-Бажын", new Point(50.615235, 97.384962)));
         my_PoIs.add(new PoIData("Сарыг-Хая и село Кызыл-Даг", new Point(51.131828, 89.892892)));
+        my_PoIs.add(new PoIData("Пор-Бажын", new Point(50.615235, 97.384962)));
         my_PoIs.add(new PoIData("Скифское золото", new Point(51.719081288623094, 94.42954759663938)));
         my_PoIs.add(new PoIData("озеро Сут-Холь", new Point(51.516453, 91.167058)));
         my_PoIs.add(new PoIData("гора Сыын-Чурээ", new Point(51.357530, 92.471939)));

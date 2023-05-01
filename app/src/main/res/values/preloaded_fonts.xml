@@ -2,6 +2,7 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/acme</item>
+        <item>@font/allan_bold</item>
         <item>@font/montserrat_extrabold</item>
         <item>@font/montserrat_extralight</item>
         <item>@font/montserrat_extralight_italic</item>

@@ -10,7 +10,7 @@ public class SlideShowActivity extends Activity {
 
     private ViewFlipper myViewFlipper;
     private float initialXPoint;
-    int[] image = { R.drawable.flag_tyva_new , R.drawable._4064166471515};
+    int[] image = { R.drawable.flag_tyva_new , R.drawable.flag_tyva_new};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

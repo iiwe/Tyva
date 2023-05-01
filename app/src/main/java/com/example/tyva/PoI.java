@@ -8,31 +8,22 @@ import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.yandex.mapkit.Animation;
 import com.yandex.mapkit.MapKitFactory;
 import com.yandex.mapkit.geometry.Circle;
-import com.yandex.mapkit.geometry.LinearRing;
 import com.yandex.mapkit.geometry.Point;
-import com.yandex.mapkit.geometry.Polygon;
 import com.yandex.mapkit.map.CameraPosition;
 import com.yandex.mapkit.map.CircleMapObject;
 import com.yandex.mapkit.map.IconStyle;
-import com.yandex.mapkit.map.MapObject;
 import com.yandex.mapkit.map.MapObjectCollection;
 import com.yandex.mapkit.map.MapObjectTapListener;
 import com.yandex.mapkit.map.PlacemarkMapObject;
-import com.yandex.mapkit.map.PolygonMapObject;
 import com.yandex.mapkit.mapview.MapView;
 import com.yandex.runtime.image.AnimatedImageProvider;
-import com.yandex.runtime.image.ImageProvider;
-import com.yandex.runtime.ui_view.ViewProvider;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Random;
 
 public class PoI extends AppCompatActivity {
     private MapView mapview;
@@ -40,7 +31,7 @@ public class PoI extends AppCompatActivity {
     private final Point CAMERA_TARGET = new Point(51.71982705977847, 94.44525207784682);
 
     private final Point ANIMATED_PLACEMARK_CENTER = new Point(59.948, 30.318);
-    private Button full_screen;
+    private ImageButton full_screen;
     private MapObjectCollection mapObjects;
     private Handler animationHandler;
     private ArrayList<PoIData> my_PoIs; //объявление
