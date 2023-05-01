@@ -22,10 +22,13 @@ public class PoIActivity extends AppCompatActivity {
         show_map = findViewById(R.id.show_map);
         Intent intent = getIntent();
         PoIData myPoi = intent.getParcelableExtra("Selected");
-        if(myPoi.getCoords() == null){
-            show_map.setVisibility(View.INVISIBLE);
-        }
+        System.out.println("Name = " + myPoi.getName());
         textView.setText(myPoi.getName());
         imageView.setImageResource(myPoi.getFoto());
+        if((myPoi.getCoords().getLongitude() == 0.0) && (myPoi.getCoords().getLongitude() == 0.0)){
+
+            show_map.setVisibility(View.INVISIBLE);
+        }
+
     }
 }
