@@ -61,6 +61,8 @@ public class Map extends AppCompatActivity {
         my_PoIs.add(new PoIData("Чараш-Даш", new Point(50.635, 90.1504)));
         my_PoIs.add(new PoIData("аржаан Чойган", new Point(52.3445, 98.4517)));
         my_PoIs.add(new PoIData("аржаан Шивилиг", new Point( 50.993692, 89.917089)));
+
+        my_PoIs.add(new PoIData("Шагаа", null));
         for (int i = 0; i < my_PoIs.size(); i++) {
             String s = "poi_"+ i;
             int resourceId = this.getResources().getIdentifier(s, "drawable", this.getPackageName());

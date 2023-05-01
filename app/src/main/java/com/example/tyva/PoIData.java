@@ -67,8 +67,10 @@ public class PoIData implements Parcelable {
     @Override
     public void writeToParcel(@NonNull Parcel parcel, int i) {
         parcel.writeString(name);
-        parcel.writeDouble(coords.getLatitude());
-        parcel.writeDouble(coords.getLongitude());
+        if (coords != null) {
+            parcel.writeDouble(coords.getLatitude());
+            parcel.writeDouble(coords.getLongitude());
+        }
         parcel.writeInt(foto);
     }
     public static final Creator<PoIData> CREATOR = new Creator<PoIData>() {
