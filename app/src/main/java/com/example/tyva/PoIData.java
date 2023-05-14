@@ -31,6 +31,11 @@ public class PoIData implements Parcelable {
         this.coords = coords;
         this.foto = foto;
     }
+    public PoIData(String name, Point coords, String description){
+        this.name = name;
+        this.coords = coords;
+        this.description = description;
+    }
 
     @Override
     public String toString(){
@@ -51,7 +56,7 @@ public class PoIData implements Parcelable {
         this.name = name;
     }
     public void setDescription(String description){this.description = description;}
-
+    public String getDescription(){return description;}
     public Point getCoords() {
         return coords;
     }

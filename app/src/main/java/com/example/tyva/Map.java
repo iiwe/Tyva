@@ -23,11 +23,11 @@ public class Map extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
         my_PoIs = new ArrayList<>(); //инициализация
-        my_PoIs.add(new PoIData("Центр Азии", new Point(51.72515656949432,94.44365188425749)));
-        my_PoIs.add(new PoIData("Гора Ак-Хайыракан и Моренская пещера", new Point(50.360700, 95.452978)));
-        my_PoIs.add(new PoIData("Aржаан Ажыг-Суг", new Point(51.764981, 92.106207)));
-        my_PoIs.add(new PoIData("озеро Азас", new Point(52.394587, 96.501249)));
-        my_PoIs.add(new PoIData("гора Бай-Тайга", new Point(51.245975, 89.959614)));
+        my_PoIs.add(new PoIData("Центр Азии", new Point(51.72515656949432,94.44365188425749), "asdf"));
+        my_PoIs.add(new PoIData("Гора Ак-Хайыракан и Моренская пещера", new Point(50.360700, 95.452978), "2"));
+        my_PoIs.add(new PoIData("Aржаан Ажыг-Суг", new Point(51.764981, 92.106207), "3"));
+        my_PoIs.add(new PoIData("озеро Азас", new Point(52.394587, 96.501249), "4"));
+        my_PoIs.add(new PoIData("гора Бай-Тайга", new Point(51.245975, 89.959614), "5"));
         my_PoIs.add(new PoIData("Бижиктиг-Хая и каменное изваяние Чингисхана", new Point(51.057274, 90.595495)));
         my_PoIs.add(new PoIData("Буддийская ниша Суме", new Point(51.607277, 92.395501)));
         my_PoIs.add(new PoIData("гора Догэ:", new Point(51.761853, 94.423260)));

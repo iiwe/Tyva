@@ -25,7 +25,6 @@ public class PoIActivity extends AppCompatActivity {
         PoIData myPoi = intent.getParcelableExtra("Selected");
         System.out.println("Name = " + myPoi.getName());
         name.setText(myPoi.getName());
-        description.setText(myPoi.get);
         imageView.setImageResource(myPoi.getFoto());
         if((myPoi.getCoords().getLongitude() == 0.0) && (myPoi.getCoords().getLongitude() == 0.0)){
 
