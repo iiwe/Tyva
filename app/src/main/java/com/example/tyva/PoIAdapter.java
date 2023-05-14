@@ -46,11 +46,12 @@ public class PoIAdapter extends BaseAdapter {
         PoIData poIData = poIDatas.get(i); //тот, на кого мы тыкнули
         ((TextView)view.findViewById(R.id.namePoi)).setText(poIData.getName());
         ((ImageView)view.findViewById(R.id.fotoPoi)).setImageResource(poIData.getFoto());
-        if(poIData.getDescription() != null) {
-            ((TextView) view.findViewById(R.id.description)).setText(poIData.getDescription());
-        } else {
-            ((TextView) view.findViewById(R.id.description)).setText("Не установлено");
-        }
+//        if(poIData.getDescription() != null) {
+//            ((TextView) view.findViewById(R.id.description)).setText(poIData.getDescription());
+//        } else {
+//            ((TextView)view.findViewById(R.id.description)).setText("Не установлено");
+//        }
+
         return view;
     }
 }

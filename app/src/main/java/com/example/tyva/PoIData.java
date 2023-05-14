@@ -37,6 +37,13 @@ public class PoIData implements Parcelable {
         this.description = description;
     }
 
+    public PoIData(String name, Point coords, int foto, String description){
+        this.name = name;
+        this.coords = coords;
+        this.foto = foto;
+        this.description = description;
+    }
+
     @Override
     public String toString(){
         return "Name = " + name;
@@ -78,6 +85,7 @@ public class PoIData implements Parcelable {
             parcel.writeDouble(coords.getLongitude());
         }
         parcel.writeInt(foto);
+        parcel.writeString(description);
     }
     public static final Creator<PoIData> CREATOR = new Creator<PoIData>() {
         @Override
@@ -86,7 +94,8 @@ public class PoIData implements Parcelable {
             double x = parcel.readDouble();
             double y = parcel.readDouble();
             int foto = parcel.readInt();
-            return new PoIData(name, new Point(x, y), foto);
+            String descr = parcel.readString();
+            return new PoIData(name, new Point(x, y), foto, descr);
         }
 
         @Override

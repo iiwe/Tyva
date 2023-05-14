@@ -26,6 +26,12 @@ public class PoIActivity extends AppCompatActivity {
         System.out.println("Name = " + myPoi.getName());
         name.setText(myPoi.getName());
         imageView.setImageResource(myPoi.getFoto());
+        if (myPoi.getDescription() != null){
+            description.setText(myPoi.getDescription());
+        }
+        else {
+            description.setText("Не задано!");
+        }
         if((myPoi.getCoords().getLongitude() == 0.0) && (myPoi.getCoords().getLongitude() == 0.0)){
 
             show_map.setVisibility(View.INVISIBLE);
