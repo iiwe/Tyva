@@ -42,13 +42,18 @@ public class Map extends AppCompatActivity {
         my_PoIs.add(new PoIData("река Кызыл-Хем", new Point(51.618802, 95.083672)));
         my_PoIs.add(new PoIData("гора Монгун-Тайга", new Point(50.278795, 90.118663)));
         my_PoIs.add(new PoIData("писаница Мугур-Саргол", new Point(51.699368, 92.288905)));
+        my_PoIs.add(new PoIData("Шагаа", null));
+        my_PoIs.add(new PoIData("Наадым", null));
         my_PoIs.add(new PoIData("Сарыг-Хая и село Кызыл-Даг", new Point(51.131828, 89.892892)));
         my_PoIs.add(new PoIData("Пор-Бажын", new Point(50.615235, 97.384962)));
         my_PoIs.add(new PoIData("Скифское золото", new Point(51.719081288623094, 94.42954759663938)));
+        my_PoIs.add(new PoIData("Снежный барс", null));
+        my_PoIs.add(new PoIData("Старообрядчество", null));
         my_PoIs.add(new PoIData("озеро Сут-Холь", new Point(51.516453, 91.167058)));
         my_PoIs.add(new PoIData("гора Сыын-Чурээ", new Point(51.357530, 92.471939)));
         my_PoIs.add(new PoIData("аржаан Тарыс", new Point(50.374175, 98.196749)));
         my_PoIs.add(new PoIData("скала Теве-Хая", new Point(50.545726, 95.121543)));
+        my_PoIs.add(new PoIData("Памятники древнетюрской письменности", null));
         my_PoIs.add(new PoIData("Убсунурская котловина и озеро Торе-Холь", new Point(50.646991, 93.181116)));
         my_PoIs.add(new PoIData("Улуг-Хорум", new Point(50.488300, 91.235469)));
         my_PoIs.add(new PoIData("Устуу-Хурээ", new Point(51.258591, 91.654167)));
@@ -56,13 +61,15 @@ public class Map extends AppCompatActivity {
         my_PoIs.add(new PoIData("Уш-Белдир", new Point(51.471077, 98.053945)));
         my_PoIs.add(new PoIData("гора Хайыракан", new Point(51.564302, 93.028220)));
         my_PoIs.add(new PoIData("озеро Хиндиктиг-Холь", new Point(50.350944, 89.830245)));
+        my_PoIs.add(new PoIData("Хоомей", null));
         my_PoIs.add(new PoIData("озеро Чагытай", new Point(51.016828, 94.728531)));
         my_PoIs.add(new PoIData("Чалама", new Point(51.737514, 93.504994)));
         my_PoIs.add(new PoIData("Чараш-Даш", new Point(50.635, 90.1504)));
         my_PoIs.add(new PoIData("аржаан Чойган", new Point(52.3445, 98.4517)));
         my_PoIs.add(new PoIData("аржаан Шивилиг", new Point( 50.993692, 89.917089)));
-
-        my_PoIs.add(new PoIData("Шагаа", null));
+        my_PoIs.add(new PoIData("Девять видов скота выращу я, сыт и одет буду я..", null));
+        my_PoIs.add(new PoIData("Кызыл", null));
+        my_PoIs.add(new PoIData("Юрта", null));
         for (int i = 0; i < my_PoIs.size(); i++) {
             String s = "poi_"+ i;
             int resourceId = this.getResources().getIdentifier(s, "drawable", this.getPackageName());

@@ -15,7 +15,7 @@ public class PoIData implements Parcelable {
     //3) Добавить его в writeToParcel и в createFromParcel
     //4) Модифицировать activity_poi_full - добавить туда текстовое поле для полного описания
     // Сами описания хранить в виде массива String в Map.java - аналогично словарю
-    private String name;
+    private String name, description;
     private Point coords;
 
     public int getFoto() {
@@ -50,6 +50,7 @@ public class PoIData implements Parcelable {
     public void setName(String name) {
         this.name = name;
     }
+    public void setDescription(String description){this.description = description;}
 
     public Point getCoords() {
         return coords;
